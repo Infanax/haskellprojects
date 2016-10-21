@@ -1,0 +1,10 @@
+module Main where
+
+  data Bit = Off | On
+      deriving (Eq,Show)
+
+  xor :: Bit -> Bit -> Bit
+  xor On On = Off
+  xor On Off = On
+  xor Off On = On
+  xor Off Off = Off
